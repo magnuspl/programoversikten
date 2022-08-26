@@ -47,7 +47,8 @@ function MyApp({ Component, pageProps }: AppProps) {
 
       </Head>
       <Layout>
-      <Component {...pageProps} />
+          {  /*@ts-ignore*/ }
+          <Component {...pageProps} />
       </Layout>
     </>
   );

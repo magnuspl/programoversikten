@@ -39,16 +39,6 @@ export default function DetailMovie(props: DetailMovieProps) {
         </div>
         <div className="section-content">
           <SectionHeader movie={movie} />
-          {false && <div className="providers">
-            {flatRate && flatRate.map(it => (
-                <div className={"flex flex-row"}>
-                  <div className="movie-poster mb-3">
-                    <img src={`${rootImg}/w500${it.logo_path}`} alt={`backdrop ${it.provider_name}`}/>
-                  </div>
-                  {it.provider_name}
-                </div>
-            ))}
-          </div>}
           <SectionProviders similarMovies={flatRate} />
           <SectionInfo movie={movie} credits={credits} />
           <SectionRecom similarMovies={similarMovies} />

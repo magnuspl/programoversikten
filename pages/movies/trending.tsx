@@ -73,7 +73,8 @@ export default function trending(props: TrendingProps) {
           </div>
         </div>
         <div className="d-flex justify-content-center">
-          <ReactPaginate
+          {  /*@ts-ignore*/ }
+            <ReactPaginate
             onPageChange={(event: any) => setPageActive(event.selected + 1)}
             forcePage={pageActive - 1}
             pageRangeDisplayed={3}

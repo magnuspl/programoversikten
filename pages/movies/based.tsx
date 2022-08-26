@@ -30,6 +30,8 @@ export default function based(props: BasedProps) {
     router.push(`/movies/based?q=${query}&page=${pageActive}`);
   }, [query, pageActive, totalPages]);
 
+  // @ts-ignore
+  // @ts-ignore
   return (
     <>
       <div className="section-movies container-xxxl my-5" style={{ minHeight: '100vh' }}>
@@ -66,7 +68,8 @@ export default function based(props: BasedProps) {
           </div>
         </div>
         <div className="d-flex justify-content-center">
-          <ReactPaginate
+          {  /*@ts-ignore*/ }
+            <ReactPaginate
             onPageChange={(event: any) => setPageActive(event.selected + 1)}
             forcePage={pageActive - 1}
             pageRangeDisplayed={3}

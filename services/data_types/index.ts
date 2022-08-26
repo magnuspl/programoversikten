@@ -10,7 +10,9 @@ export interface DetailMovieTypes {
     title: string;
     release_date: string;
     vote_average: number;
+    logo_path: string;
     vote_count: number;
+    provider_name: string,
     runtime: number;
     status: string;
     overview: string;

@@ -75,6 +75,7 @@ export default function category(props: CategoryProps) {
           </div>
         </div>
         <div className="d-flex justify-content-center">
+          {  /*@ts-ignore*/ }
           <ReactPaginate
             onPageChange={(event: any) => setPageActive(event.selected + 1)}
             forcePage={pageActive - 1}
