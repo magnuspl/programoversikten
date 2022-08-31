@@ -42,6 +42,8 @@ function MyApp({ Component, pageProps }: AppProps) {
         {/* <!-- Google Fonts --> */}
         <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet" />
 
+        <link href="https://fonts.googleapis.com/css2?family=Vollkorn:ital,wght@0,900;1,900&display=swap" rel="stylesheet" />
+
         {/* <!-- Fontawesome --> */}
         <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet" />
 

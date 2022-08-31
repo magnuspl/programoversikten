@@ -1,8 +1,8 @@
 :root {
   --primaryColor: rgb(111, 87, 235);
   --secondaryColor: rgb(248, 249, 250);
-  --bgColor: rgb(255, 255, 255);
-  --textColor: rgb(0, 0, 0);
+  --bgColor: #14181c;
+  --textColor: #9ab;
   --scrollColor: rgb(219, 219, 219);
   --thumbColor: rgb(168, 168, 168);
   --scrollBarColor: rgb(241, 241, 241);
@@ -22,9 +22,9 @@ body {
 
 .dark-mode {
   --primaryColor: rgb(111, 87, 235);
-  --bgColor: rgb(30, 29, 43);
-  --textColor: rgb(255, 255, 255);
-  --secondaryColor: rgb(37, 39, 54);
+  --bgColor: #14181c;
+  --textColor: #9ab;
+  --secondaryColor: rgb(7 8 13);
   --scrollColor: rgb(37, 39, 54);
   --thumbColor: rgb(30, 29, 43);
   --scrollBarColor: rgb(37, 39, 54);
