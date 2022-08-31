@@ -8,9 +8,8 @@ export default function Navbar() {
     <nav className="navbar navbar-expand-lg navbar-light">
       <div className="container container-xxxl">
         <Link href="/">
-          <a className="navbar-brand fs-3">
-            <span className="text-purple fw-bold">Film</span>
-            jakt.no
+          <a className="navbar-brand fs-3 logo">
+            FILMJAKT
           </a>
         </Link>
         <div className="d-block d-lg-none ms-auto">
@@ -25,9 +24,6 @@ export default function Navbar() {
             </li>
           </ul>
           <FormSearch />
-          <div className="d-none d-lg-block">
-            <ButtonTheme />
-          </div>
         </div>
       </div>
     </nav>

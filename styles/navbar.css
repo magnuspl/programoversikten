@@ -1,5 +1,4 @@
 .navbar {
-  background-color: var(--secondaryColor);
 }
 
 .navbar .navbar-brand {
@@ -51,11 +50,16 @@
   color: var(--primaryColor);
   background-color: transparent;
   outline: none;
-  border: none;
   margin-left: 10px;
   border: 1px solid var(--primaryColor);
   border-radius: 50%;
   display: grid;
   place-items: center;
   transition: 0.3s;
+}
+
+.logo {
+  color: #d9d9d9 !important;
+  font-family: 'Vollkorn', serif;
+  font-size: 2.4rem !important;
 }

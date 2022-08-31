@@ -1,5 +1,5 @@
 :root {
-  --primaryColor: rgb(111, 87, 235);
+  --primaryColor: #3e3a4e;
   --secondaryColor: rgb(248, 249, 250);
   --bgColor: #14181c;
   --textColor: #9ab;
@@ -17,11 +17,11 @@ html,
 body {
   padding: 0;
   margin: 0;
-  background: var(--bgColor) !important;
+  background: #14181c url("https://s.ltrbxd.com/static/img/content-bg.0d9a0f0f.png") 0 -1px repeat-x;
 }
 
 .dark-mode {
-  --primaryColor: rgb(111, 87, 235);
+  --primaryColor: #3e3a4e;
   --bgColor: #14181c;
   --textColor: #9ab;
   --secondaryColor: rgb(7 8 13);

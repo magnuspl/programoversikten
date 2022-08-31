@@ -37,7 +37,7 @@
 
 .movie-item:hover .movie-info h5,
 .movie-item:hover .movie-info h6 {
-  color: var(--primaryColor);
+  color: white;
 }
 
 .movie-item .movie-info h6 {

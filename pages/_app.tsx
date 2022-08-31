@@ -22,7 +22,7 @@ function MyApp({ Component, pageProps }: AppProps) {
   Router.events.on('routeChangeError', () => NProgress.done());
 
   return (
-    <>
+    <div className={"dark-mode"}>
     
       <Head>
         <title>Filmjakt.no | Norges filmleksikon</title>
@@ -52,7 +52,7 @@ function MyApp({ Component, pageProps }: AppProps) {
           {  /*@ts-ignore*/ }
           <Component {...pageProps} />
       </Layout>
-    </>
+    </div>
   );
 }
 export default MyApp;
