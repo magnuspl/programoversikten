@@ -23,8 +23,7 @@
 }
 
 .navbar .btn-outline-purple {
-  border: 1px solid var(--primaryColor);
-  color: var(--primaryColor);
+  color: #d9d9d9;
 }
 
 .navbar .btn-outline-purple:hover,
@@ -61,7 +60,7 @@
 .logo {
   color: #d9d9d9 !important;
   font-family: 'Vollkorn', serif;
-  font-size: 2.4rem !important;
+  font-size: 2rem !important;
 }
 
 .navbar {

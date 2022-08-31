@@ -4,6 +4,7 @@
 
 .detail-movie .section-backdrop {
   position: relative;
+  filter: brightness(50%);
 }
 
 .detail-movie .section-backdrop::before {
