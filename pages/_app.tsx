@@ -25,12 +25,12 @@ function MyApp({ Component, pageProps }: AppProps) {
     <>
     
       <Head>
-        <title>Moviepedia | Encyclopedia of Movies</title>
+        <title>Filmjakt.no | Norges filmleksikon</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <meta name="description" content="Encyclopedia of Movies" />
-        <meta name="og:title" content="Moviepedia | Encyclopedia of Movies" />
+        <meta name="description" content="Norges filmleksikon" />
+        <meta name="og:title" content="Filmjakt.no | Norges filmleksikon" />
         <meta name="og:image" content="https://cdn-icons-png.flaticon.com/512/1038/1038100.png" />
-        <meta name="og:description" content="Encyclopedia of Movies" />
+        <meta name="og:description" content="Norges filmleksikon" />
         <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
 
         {/* <!-- Bootstrap CSS --> */}

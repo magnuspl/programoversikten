@@ -55,10 +55,11 @@ const Footer: React.FC = () => {
     <Wrapper>
       <FooterWrapper container>
         <FooterText>
-          © 2021{' '}
+          © 2022{' '}
           <FooterLink href='#' text>
-            Programoversikten
+            Filmjakt.no
           </FooterLink>
+          | Data er hentet fra moviedb.org
         </FooterText>
       </FooterWrapper>
     </Wrapper>

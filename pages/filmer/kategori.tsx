@@ -16,7 +16,7 @@ interface CategoryProps {
   catActive: string;
 }
 
-export default function category(props: CategoryProps) {
+export default function kategori(props: CategoryProps) {
   const {
     movies, categories, totalPages, id, p, catActive,
   } = props;
@@ -30,7 +30,7 @@ export default function category(props: CategoryProps) {
     if (pageActive > totalPages) {
       setPageActive(totalPages);
     }
-    router.push(`/movies/category?idc=${idc}&cat=${active}&page=${pageActive}`);
+    router.push(`/filmer/kategori?idc=${idc}&cat=${active}&page=${pageActive}`);
   }, [idc, pageActive, totalPages]);
 
   return (

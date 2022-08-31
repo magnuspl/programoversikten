@@ -40,7 +40,7 @@ export default function TrendingMovies() {
           </div>
         </div>
         <div>
-          <Link href={`/movies/trending?q=${active}&page=1`}>
+          <Link href={`/filmer/trending?q=${active}&page=1`}>
             <a className="view-all">
               Se alle
             </a>

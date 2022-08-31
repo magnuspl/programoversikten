@@ -31,27 +31,27 @@ export default function SectionInfo(props: SectionInfoProps) {
           <p>{movie.status}</p>
         </div>
         <div>
-          <h5 className="fw-bold">Release date</h5>
-          <p>{year.toLocaleDateString('en', { day: 'numeric', month: 'long', year: 'numeric' })}</p>
+          <h5 className="fw-bold">Lanseringsdato</h5>
+          <p>{year.toLocaleDateString('nb', { day: 'numeric', month: 'long', year: 'numeric' })}</p>
         </div>
         <div>
-          <h5 className="fw-bold">Duration</h5>
+          <h5 className="fw-bold">Lengde</h5>
           <p>{`${movie.runtime} Min`}</p>
         </div>
         <div>
-          <h5 className="fw-bold">Language</h5>
+          <h5 className="fw-bold">Språk</h5>
           <p>{movie.original_language}</p>
         </div>
-        <div>
-          <h5 className="fw-bold">Popularity</h5>
+        {false && <div>
+          <h5 className="fw-bold">Popularitet</h5>
           <p>{movie.popularity}</p>
-        </div>
+        </div>}
         <div>
-          <h5 className="fw-bold">Budget</h5>
+          <h5 className="fw-bold">Budsjett</h5>
           <p><CurrencyFormat value={movie.budget} displayType="text" prefix="$" thousandSeparator /></p>
         </div>
         <div>
-          <h5 className="fw-bold">Revenue</h5>
+          <h5 className="fw-bold">Omsetning</h5>
           <p><CurrencyFormat value={movie.revenue} displayType="text" prefix="$" thousandSeparator /></p>
         </div>
       </div>

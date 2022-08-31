@@ -9,6 +9,7 @@ import {
 } from '../../services/data_api';
 import { DetailMovieTypes } from '../../services/data_types';
 import SectionProviders from "../../components/organisms/DetailMovieContent/SectionProviders";
+import { NextSeo } from 'next-seo';
 
 interface DetailMovieProps {
   movie: DetailMovieTypes;
@@ -26,10 +27,16 @@ export default function DetailMovie(props: DetailMovieProps) {
   } = props;
   const rootImg = process.env.NEXT_PUBLIC_IMG;
 
+  const year = new Date(movie.release_date);
+
   const flatRate = providers?.results?.NO?.flatrate
 
   return (
     <>
+      <NextSeo
+          title={movie.title + " (" +year.getFullYear() + ") " + "|" +  " Streaming | Filmjakt.no"}
+          description={movie.overview}
+      />
       <div className="d-none">
         <Navbar />
       </div>

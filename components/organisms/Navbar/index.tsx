@@ -9,8 +9,8 @@ export default function Navbar() {
       <div className="container container-xxxl">
         <Link href="/">
           <a className="navbar-brand fs-3">
-            <span className="text-purple fw-bold">Program</span>
-            oversikten
+            <span className="text-purple fw-bold">Film</span>
+            jakt.no
           </a>
         </Link>
         <div className="d-block d-lg-none ms-auto">

@@ -33,8 +33,8 @@ export default function CategoryMovies() {
     <div className="section-category container-xxxl mt-0 mt-lg-5">
       <div className="mb-3 d-flex justify-content-between align-items-center">
         <h3 className="fw-bold">Utforsk</h3>
-        <Link href={`/movies/category?idc=${id}&cat=${active}&page=1`}>
-          <a className="view-all">View All</a>
+        <Link href={`/filmer/kategori?idc=${id}&cat=${active}&page=1`}>
+          <a className="view-all">Se alle</a>
         </Link>
       </div>
       <div className="button-wrapper mb-4">

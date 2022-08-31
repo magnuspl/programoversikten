@@ -37,7 +37,7 @@ export default function MovieItem(props: Partial<MovieItemProps>) {
             <div className="movie-info d-flex flex-row justify-content-between">
               <div>
                 <h6 className="fw-bold">{title}</h6>
-                <p className="my-1 my-md-2">{`${year.toLocaleDateString('en', { day: 'numeric', month: 'long', year: 'numeric' })}`}</p>
+                <p className="my-1 my-md-2">{`${year.toLocaleDateString('nb', { day: 'numeric', month: 'long', year: 'numeric' })}`}</p>
                 <div className="d-flex align-items-center">
                   <span><i className="fa fa-star" aria-hidden /></span>
                   <span className="ms-2">{`${rate} (${count?.toLocaleString()})`}</span>
@@ -63,7 +63,7 @@ export default function MovieItem(props: Partial<MovieItemProps>) {
               {genres.length > 0 ? (
                 <p className="my-1">{`${year.getFullYear()} • ${categories}`}</p>
               ) : (
-                <p className="my-1">{`${year.toLocaleDateString('en', { day: 'numeric', month: 'long', year: 'numeric' })}`}</p>
+                <p className="my-1">{`${year.toLocaleDateString('nb', { day: 'numeric', month: 'long', year: 'numeric' })}`}</p>
               )}
               <div className="d-flex align-items-center">
                 <i className="fa fa-star" aria-hidden />

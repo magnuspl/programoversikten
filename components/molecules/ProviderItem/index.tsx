@@ -58,7 +58,7 @@ export default function ProviderItem(props: Partial<ProviderItemProps>) {
               {genres.length > 0 ? (
                 <p className="my-1">{`${year.getFullYear()} • ${categories}`}</p>
               ) : (
-                <p className="my-1">{`${year.toLocaleDateString('en', { day: 'numeric', month: 'long', year: 'numeric' })}`}</p>
+                <p className="my-1">{`${year.toLocaleDateString('nb', { day: 'numeric', month: 'long', year: 'numeric' })}`}</p>
               )}
               <div className="d-flex align-items-center">
                 <i className="fa fa-star" aria-hidden />

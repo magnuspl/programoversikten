@@ -4,17 +4,17 @@ import ReactPaginate from 'react-paginate';
 import MovieItem from '../../components/molecules/MovieItem';
 import Footer from '../../components/organisms/Footer';
 import Navbar from '../../components/organisms/Navbar';
-import { getTrendingMovies } from '../../services/data_api';
+import { getMovies } from '../../services/data_api';
 import { DetailMovieTypes } from '../../services/data_types';
 
-interface TrendingProps {
+interface BasedProps {
   movies: DetailMovieTypes[];
   totalPages: number;
   p: number;
   q: string;
 }
 
-export default function trending(props: TrendingProps) {
+export default function based(props: BasedProps) {
   const {
     movies, totalPages, q, p,
   } = props;
@@ -27,30 +27,25 @@ export default function trending(props: TrendingProps) {
     if (pageActive > totalPages) {
       setPageActive(totalPages);
     }
-    router.push(`/movies/trending?q=${query}&page=${pageActive}`);
+    router.push(`/filmer/based?q=${query}&page=${pageActive}`);
   }, [query, pageActive, totalPages]);
 
+  // @ts-ignore
+  // @ts-ignore
   return (
     <>
-      <div className="section-trending container-xxxl my-5" style={{ minHeight: '100vh' }}>
-        <div className="d-flex flex-column flex-sm-row align-items-start gap-3 my-5">
-          <h3 className="fw-bold">Populære filmer</h3>
-          <div className="button-wrapper d-flex">
-            <button
-              type="button"
-              className={`btn btn-trending ${query === 'week' ? 'btn-active' : ''}`}
-              onClick={() => setQuery('week')}
-            >
-              This Week
-            </button>
-            <button
-              type="button"
-              className={`btn btn-trending ${query === 'day' ? 'btn-active' : ''}`}
-              onClick={() => setQuery('day')}
-            >
-              Today
-            </button>
-          </div>
+      <div className="section-movies container-xxxl my-5" style={{ minHeight: '100vh' }}>
+        <div className="mb-5">
+          <h3 className="fw-bold">Movies</h3>
+          <select
+            className="form-select"
+            value={query}
+            onChange={(event: any) => setQuery(event.target.value)}
+          >
+            <option value="popular">Popular</option>
+            <option value="top_rated">Top Rated</option>
+            <option value="upcoming">Upcoming</option>
+          </select>
         </div>
         <div className="grid-wrapper flex-row flex-wrap mb-5">
           <div className="row row-cols-auto">
@@ -101,18 +96,10 @@ export default function trending(props: TrendingProps) {
   );
 }
 
-interface GetServerSideProps {
-    query: {
-        q: string,
-        page: string
-    }
-}
-
-export async function getServerSideProps({ query }: GetServerSideProps) {
+export async function getServerSideProps({ query }:any) {
   const { q, page } = query;
   const p = Number(page);
-
-  const response: any = await getTrendingMovies(q, p);
+  const response: any = await getMovies(q, p);
   const movies = response.results;
   const totalPages = Number(response.total_pages);
 
