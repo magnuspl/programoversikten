@@ -63,3 +63,8 @@
   font-family: 'Vollkorn', serif;
   font-size: 2.4rem !important;
 }
+
+.navbar {
+  padding-top: 0;
+  padding-bottom: 0;
+}
