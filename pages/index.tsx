@@ -18,8 +18,8 @@ export default function index() {
       <div className="preloader">
         <LoadingPage />
       </div>
-      <CategoryMovies />
       <TrendingMovies />
+      <CategoryMovies />
       <Movies />
       <Footer />
     </>

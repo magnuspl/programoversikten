@@ -24,9 +24,14 @@ export default function FormSearch() {
 
   return (
     <form onSubmit={onSubmit}>
-      <div className="d-flex">
+      <div className="d-flex w-100">
         <input
-          className="form-control me-2"
+            style={{
+              borderRadius: "30px",
+              padding: "20px",
+              fontSize: "1rem"
+            }}
+          className="form-control"
           type="search"
           placeholder="Søk"
           aria-label="Search"
@@ -35,6 +40,7 @@ export default function FormSearch() {
         />
         <button
           className="btn btn-outline-purple"
+          style={{marginLeft: "-50px"}}
           type="button"
           onClick={onClick}
         >

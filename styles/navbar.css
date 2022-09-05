@@ -1,6 +1,3 @@
-.navbar {
-}
-
 .navbar .navbar-brand {
   color: var(--textColor);
 }
@@ -64,6 +61,7 @@
 }
 
 .navbar {
-  padding-top: 0;
-  padding-bottom: 0;
+  padding:10px;
+  #margin-bottom: -90px;
+  z-index: 10;
 }
